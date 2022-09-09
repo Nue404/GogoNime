@@ -1,9 +1,7 @@
-Options -Indexes
-IndexIgnore *
-IndexIgnore *.png *.zip *.jpg *.gif *.doc
-RewriteEngine on
-RewriteCond %{REQUESTFILENAME} !-f
-RewriteRule ^([^.]+)$ $1.php [NC,L]
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(([A-Za-z0-9\-]+/)*[A-Za-z0-9\-]+)?$ $1.php
 
 RewriteRule ^category/([a-zA-Z0-9-=_]+) anime-details.php
 RewriteRule ^([a-zA-Z0-9-=_]+)-episode-([a-zA-Z0-9-=_]+) streaming.php
