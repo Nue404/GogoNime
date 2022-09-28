@@ -3,7 +3,7 @@ require_once('./php/info.php');
 $parts=parse_url($_SERVER['REQUEST_URI']); 
 $page_url=explode('/', $parts['path']);
 $url = $page_url[count($page_url)-1];
-//$url = "naruto-episode-112";
+$url = "naruto-episode-112";
 $json = file_get_contents("$apiLink/getEpisode/$url");
 $anime = json_decode($json, true);
 $ep_num = $anime['ep_num'];
@@ -39,8 +39,8 @@ $episodeArray = $fetchDetails['episode_id'];
 
   <link rel="canonical" href="<?=$base_url?><?php echo $_SERVER['REQUEST_URI'] ?>" />
   <link rel="alternate" hreflang="en-us" href="<?=$base_url?><?php echo $_SERVER['REQUEST_URI'] ?>" />
-  <link rel="stylesheet" type="text/css" href="<?=$base_url?>/css/style.css" />
-  <script type="text/javascript" src="<?=$base_url?>/js/libraries/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn-eq4.pages.dev/gogoanime/css/style.css" />
+  <script type="text/javascript" src="https://cdn-eq4.pages.dev/gogoanime/js/libraries/jquery.js"></script>
   <script>
     var base_url = 'https://' + document.domain + '/';
     var base_url_cdn_api = 'https://ajax.gogo-load.com/';
@@ -117,7 +117,7 @@ $episodeArray = $fetchDetails['episode_id'];
                                         <div class="anime_video_body_watch_items load">
                                             <div class="play-video">
                                                 <iframe
-                                                    src="https://anikatsu.ga/player/v1.php?id=<?=$url?>&download=<?=$anime['ep_download']?>"
+                                                    src="/player/v1.php?id=<?=$url?>&download=<?=$anime['ep_download']?>"
                                                     allowfullscreen="true" frameborder="0" marginwidth="0"
                                                     marginheight="0" scrolling="no"></iframe>
                                             </div>
@@ -147,7 +147,7 @@ $episodeArray = $fetchDetails['episode_id'];
                                     <ul>
                                         <li class="anime">
                                             <a href="#" class="active" rel="1"
-                                                data-video="https://anikatsu.ga/player/v1.php?id=<?=$url?>&download=<?=$anime['ep_download']?>"><i
+                                                data-video="/player/v1.php?id=<?=$url?>&download=<?=$anime['ep_download']?>"><i
                                                     class="iconlayer-server hydrax"></i>No Ads<span>Choose this
                                                     server</span></a>
                                         </li>
@@ -179,11 +179,11 @@ $episodeArray = $fetchDetails['episode_id'];
                                 <div class="anime_video_body_comment">
                                     <div class="anime_video_body_comment_name">
                                         <div class="btm-center">
-                                            <script id="dsq-count-scr" src="//gogoanimetv.disqus.com/count.js"
+                                            <script id="dsq-count-scr" src="<?=$disqus?>/count.js"
                                                 async></script>
                                             <div id="specialButton" class="specialButton">
                                                 <span class="txt">Show</span> <a
-                                                    href="<?=$base_url?><?=$url?>#disqus_thread">Comments
+                                                    href="<?=$base_url?>/<?=$url?>#disqus_thread">Comments
                                                 </a>
                                             </div>
                                         </div>
@@ -199,7 +199,7 @@ $episodeArray = $fetchDetails['episode_id'];
                                             (function () {  // DON'T EDIT BELOW THIS LINE
                                                 var d = document, s = d.createElement('script');
 
-                                                s.src = '//gogoanimetv.disqus.com/embed.js';
+                                                s.src = '<?=$disqus?>/embed.js';
 
                                                 s.setAttribute('data-timestamp', +new Date());
                                                 (d.head || d.body).appendChild(s);
@@ -342,9 +342,9 @@ $episodeArray = $fetchDetails['episode_id'];
     <div id="off_light"></div>
     <div class="clr"></div>
     <div class="mask"></div>
-        <script type="text/javascript" src="<?=$base_url?>/js/files/combo.js"></script>
-    <script type="text/javascript" src="https://anikatsu.ga/files/js/video.js"></script>
-    <script type="text/javascript" src="<?=$base_url?>/js/files/jquery.tinyscrollbar.min.js"></script>
+        <script type="text/javascript" src="https://cdn-eq4.pages.dev/gogoanime/js/files/combo.js"></script>
+    <script type="text/javascript" src="https://cdn-eq4.pages.dev/gogoanime/js/files/video.js"></script>
+    <script type="text/javascript" src="https://cdn-eq4.pages.dev/gogoanime/js/files/jquery.tinyscrollbar.min.js"></script>
     <?php include('./php/include/footer.php'); ?>
     <script>
     if(document.getElementById('episode_page')){

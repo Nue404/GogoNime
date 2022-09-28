@@ -37,9 +37,9 @@
 
 
 
-    <link rel="stylesheet" type="text/css" href="<?=$base_url?>/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn-eq4.pages.dev/gogoanime/css/style.css" />
 
-    <script type="text/javascript" src="<?=$base_url?>/js/libraries/jquery.js"></script>
+    <script type="text/javascript" src="https://cdn-eq4.pages.dev/gogoanime/js/libraries/jquery.js"></script>
     <script>
         var base_url = 'https://' + document.domain + '/';
         var base_url_cdn_api = 'https://ajax.gogo-load.com/';
@@ -256,12 +256,12 @@
     <div id="off_light"></div>
     <div class="clr"></div>
     <div class="mask"></div>
-        <script type="text/javascript" src="<?=$base_url?>/js/files/combo.js"></script>
-    <script type="text/javascript" src="https://anikatsu.ga/files/js/video.js"></script>
-    <script type="text/javascript" src="<?=$base_url?>/js/files/jquery.tinyscrollbar.min.js"></script>
+        <script type="text/javascript" src="https://cdn-eq4.pages.dev/gogoanime/js/files/combo.js"></script>
+    <script type="text/javascript" src="https://cdn-eq4.pages.dev/gogoanime/js/files/video.js"></script>
+    <script type="text/javascript" src="https://cdn-eq4.pages.dev/gogoanime/js/files/jquery.tinyscrollbar.min.js"></script>
     <div class="notice-400"
         style=" z-index:99999;position: fixed;bottom: 0;text-align: center;width: 100%; left: 0;padding: 10px;background: #939393;color: white;">
-        We moved site to <a href="https://gogoanime.lu" title="Gogoanime" alt="Gogoanime"
+        We moved site to <a href="<?=$base_url?>" title="Gogoanime" alt="Gogoanime"
             style="color: #ffc119">GogoAnime</a>. Please bookmark new site. Thank you!</div>
     <script>
         LoadFilmOngoing(1);

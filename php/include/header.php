@@ -11,16 +11,16 @@
               </ul>
             </div>
             <div class="link_face intro">
-              <a class="btn twitter hidden-phone" href="https://twitter.com/anime_around" target="_blank"
+              <a class="btn twitter hidden-phone" href="<?=$twitter?>" target="_blank"
                 data-url=""></a>
-              <a class="btn reddit hidden-phone" href="https://www.reddit.com/r/AroundAnimeTV/" target="_blank"
+              <a class="btn reddit hidden-phone" href="<?=$reddit?>" target="_blank"
                 data-url=""></a>
-              <a class="btn facebook hidden-phone" href="https://www.facebook.com/groups/409309663623039"
+              <a class="btn facebook hidden-phone" href="<?=$facebook?>"
                 target="_blank"></a>
-              <a class="btn discord hidden-phone" style="margin-right:5px;" href="https://discord.gg/gogo"
+              <a class="btn discord hidden-phone" style="margin-right:5px;" href="<?=$discord?>"
                 target="_blank" data-url=""></a>
               <a class="btn telegram hidden-phone" style="margin-right:5px;"
-                href="https://t.me/joinchat/W4lYQ-RGOQ05MmI9" target="_blank" data-url=""></a>
+                href="<?=$telegram?>" target="_blank" data-url=""></a>
             </div>
 
             <div class="submenu_intro">

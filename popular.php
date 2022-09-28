@@ -41,10 +41,10 @@ if ($page == ""){
 
 
 
-    <link rel="stylesheet" type="text/css" href="<?=$base_url?>/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn-eq4.pages.dev/gogoanime/css/style.css" />
     <?php require_once('./php/advertisments/popup.html'); ?>
 
-    <script type="text/javascript" src="<?=$base_url?>/js/libraries/jquery.js"></script>
+    <script type="text/javascript" src="https://cdn-eq4.pages.dev/gogoanime/js/libraries/jquery.js"></script>
     <script>
         var base_url = 'https://' + document.domain + '/';
         var base_url_cdn_api = 'https://ajax.gogo-load.com/';
@@ -200,9 +200,9 @@ if ($page == ""){
     <div id="off_light"></div>
     <div class="clr"></div>
     <div class="mask"></div>
-        <script type="text/javascript" src="<?=$base_url?>/js/files/combo.js"></script>
-    <script type="text/javascript" src="https://anikatsu.ga/files/js/video.js"></script>
-    <script type="text/javascript" src="<?=$base_url?>/js/files/jquery.tinyscrollbar.min.js"></script>
+        <script type="text/javascript" src="https://cdn-eq4.pages.dev/gogoanime/js/files/combo.js"></script>
+    <script type="text/javascript" src="https://cdn-eq4.pages.dev/gogoanime/js/files/video.js"></script>
+    <script type="text/javascript" src="https://cdn-eq4.pages.dev/gogoanime/js/files/jquery.tinyscrollbar.min.js"></script>
     <?php include('/php/include/footer.php')?>
 
     <script>
