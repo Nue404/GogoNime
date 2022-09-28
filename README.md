@@ -28,6 +28,8 @@
 ## Requirements
 --> Getting 404?? Make Sure you pasted .htaccess file in your root dir
 <br>
+--> We recommend hosting your own API and connecting it with your app for better performance [AniKatsu API](https://github.com/shashankktiwariii/anikatsu-api). Edit API URL in php/info.php
+<br>
 --> Php environment (use .htaccess must be enabled in localhost) or Directly Upload the code on php supported hosting (No editing Required Just Upload and Enjoy)
 
 ## Online Deployment
@@ -49,10 +51,10 @@ git clone https://github.com/shashankktiwariii/gogoanime-clone
 
 Now start the production build of the site using
 ```
-php -S localhost:8888
+Using Any PHP development environment such as XAMPP, WAMP
 ```
 
-This will start the app on http://localhost:8888 <br>
+This will start the app on http://localhost/{FOLDER NAME} <br>
 Make Sure You Edit $webUrl in php/info.php before starting in localhost.. <br>
 And Enable the use of .htaccess in PHP enviornment
 
