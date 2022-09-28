@@ -30,8 +30,8 @@ $json = json_decode($json, true);
                     autostart: false,  
     image: "",
 
-    abouttext: "<?=$webName?>",
-    aboutlink: "<?=$webUrl?>"             
+    abouttext: "<?=$website_name?>",
+    aboutlink: "<?=$base_url?>"             
     });
 
   playerInstance.addButton(
