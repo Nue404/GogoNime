@@ -3,7 +3,7 @@ require_once('./php/info.php');
 $parts=parse_url($_SERVER['REQUEST_URI']); 
 $page_url=explode('/', $parts['path']);
 $url = $page_url[count($page_url)-1];
-$url = "naruto-episode-112";
+//$url = "naruto-episode-112";
 $json = file_get_contents("$apiLink/getEpisode/$url");
 $anime = json_decode($json, true);
 $ep_num = $anime['ep_num'];
