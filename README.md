@@ -28,9 +28,7 @@
 ## Requirements
 --> Getting 404?? Make Sure you pasted .htaccess file in your root dir
 <br>
---> We recommend hosting your own API and connecting it with your app for better performance [AniKatsu API](https://github.com/shashankktiwariii/anikatsu-api). Edit API URL in php/info.php
-<br>
---> Php environment (use .htaccess must be enabled in localhost) or Directly Upload the code on php supported hosting (No editing Required Just Upload and Enjoy)
+--> Php environment (use of .htaccess must be enabled in localhost) or Directly Upload the code on php supported hosting (No editing Required Just Upload and Enjoy)
 
 ## Online Deployment
 
