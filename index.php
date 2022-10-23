@@ -46,8 +46,6 @@
         var api_anclytic = 'https://ajax.gogo-load.com/anclytic-ajax.html';
     </script>
     <script type="text/javascript" src="https://cdn.gogocdn.net/files/gogo/js/main.js?v=6.9"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7934060063902173"
-     crossorigin="anonymous"></script>
 
     <?php require_once('./php/advertisments/popup.html'); ?>
     
